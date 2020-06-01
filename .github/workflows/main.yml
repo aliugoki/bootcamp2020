@@ -7,9 +7,7 @@ name: bootcamp2020
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+ 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -24,7 +22,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Installing Node
-      uses: actionssetup-node@v2-beta
+      uses: actions/setup-node@v2-beta
       with:
         node-version: 12  
       
